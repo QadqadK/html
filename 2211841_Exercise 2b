@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2211841.css">
+</head>
+<body>
+    <h1>Resort n Homestay</h1>
+    <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destination">Destination</a></li>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+  
+        
+  
+        <form>
+          <input type="search" name="q" placeholder="Search query" />
+          <input type="submit" value="Go!" />
+        </form>
+    </nav>
+
+    <main>
+        <h2 id="home">HOME</h2>
+        <img src="sungai.png" alt="pic" class="sungai">
+        <p id="para">Welcome to our resort and homestay website, where you can discover the perfect getaway for your next vacation. Our website offers a wide selection of beautiful and comfortable accommodations that cater to a variety of tastes and budgets.
+
+            Whether you're seeking a peaceful escape from the hustle and bustle of city life, a romantic retreat with your loved one, or a fun-filled family vacation, our resort and homestay options have got you covered. Our properties are located in some of the most scenic and picturesque destinations around the world, offering breathtaking views and access to a range of outdoor activities.</p>
+        <h2 id="destination">DESTINATION</h2>
+        <h5>Your choice of destination</h5>
+        <p>Tanjung Hills Retreat</p>
+        <img src="tjh.jpg" alt="thj">
+        <p>Happy Paradise</p>
+        <img src="hpp.jpg" alt="hp">
+        <p>Saufiville Boutique Resort</p>
+        <img src="sbr.jpg" alt="sbr">
+        <h2 id="deals">DEALS</h2>
+        <table>
+            <tr>
+            <th> Destination</th>
+            <th> Prices per night</th>
+            <th> Details</th>
+            </tr>
+            <tr>
+            <td>Tanjung Hills Retreat</td>
+            <td>100 $</td>
+            <td>
+                <ul>
+                <li>Kampung style homestay near a lake</li>
+                <li>A good place for nature lovers</li>
+                <li>Barbeque equipments provided</li>
+                </ul> 
+            </td>
+            </tr>
+            <tr>
+                <td>Happy Paradise</td>
+                <td>150 $</td>
+                <td>
+                    <ul>
+                    <li>Comfortable homestay for families</li>
+                    <li>Many activities such as karaoke,snooker,futsal court etc </li>
+                    <li>Also provides playground for children</li>
+                    </ul> 
+                </td>
+                </tr>
+                <tr>
+                    <td>Saufiville Boutique Resort</td>
+                    <td>200 $</td>
+                    <td>
+                         <ul>
+                        <li>Luxurious resort with beautiful view</li>
+                        <li>High quality accommodations</li>
+                        <li>Perfect for relaxing with your loved ones</li>
+                        </ul> 
+                    </td>
+                    </tr>
+                </table>
+                <h4>Book now!</h4>
+                <form action="success.html" method="get" >
+                    <label for="name">Check-in Date</label>
+                    <input type="date" name ="Check-in" id="Check-in" >
+                    <br></br>
+                    <label for="name">Check-Out Date</label>
+                    <input type="date" name ="Check-Out" id="Check-Out" >
+                    <br></br>
+                    <label for="Adult">Adult</label>
+                    <input type="number" id="number" value="0" >
+                    <br></br>
+                    <label for="Child">Child</label>
+                    <input type="number" id="number" value="0" >
+                    <br></br>
+                    <input type="radio" name="resort" id="resort " value ="1" checked>Tanjung Hills Retreat</input>
+                    <br><br>
+                    <input type="radio" name="resort" id="resort " value ="2">Happy Paradise</input>
+                    <br></br>
+                    <input type="radio" name="resort" id="resort " value ="3">Saufiville Boutique Resort</input>
+                    <br></br>
+                    <input type="submit" name ="submit" value="Book Now" >
+                </form>
+
+        <h2 id="contact">CONTACT</h2>
+        <p>0123456789</p>
+        <p>OR</p>
+        <p>thisguy@gmail.com</p>
+    </main>
+    
+</body>
+</html>
+*{
+    box-sizing: border-box;
+    background-color: azure;
+}
+
+h1{
+    background-color: blanchedalmond;
+    border: 1px groove black;
+    text-align: center;
+}
+nav{
+    border: 2px solid black;
+    background-color: aquamarine;
+    width: 100%;
+    align-items: center;
+}
+
+nav *{
+    display: inline;
+    margin: 20px;
+    background-color: aquamarine;
+}
+nav form{
+    margin-left: 272px;
+    background-color: white;
+}
+nav ul{
+    background-color: aquamarine;
+}
+
+nav li a{
+    background-color: aquamarine;
+}
+nav form input{
+    background-color: white;
+}
+.sungai{
+    width: 100%;
+}
+/**line 30 add class= "sungai"**/
+main{
+    border: 2px solid black;
+}
+table{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+form{
+    border: 2px solid black;
+    padding: 20px;
+}
+/**add id="para" on 1st paragraph**/
+#para{
+    font-size: large;
+    font-style: italic;
+    float: right;
+}
+#home{
+    text-align: center;
+}
+#destination{
+    text-align: center;
+}
+#deals{
+    text-align: center;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+#contact{
+    text-align: center;
+    background-color: burlywood;
+    border: 2px solid black;
+}
+th{
+    border: 2px solid black;
+    background-color: burlywood;
+}
+img{
+    border: 2px solid black;
+    margin: auto;
+    display: block;
+}
+h5{
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
